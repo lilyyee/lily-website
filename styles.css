@@ -364,12 +364,11 @@ header {
 .title span {
   color: #9c2866;
 }
-#about,
+
+#projects,
 #skills,
+#about,
 #contact {
-  height: 80vh;
-}
-#projects {
   height: auto;
 }
 
