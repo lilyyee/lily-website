@@ -59,7 +59,7 @@ Variables
 }
 /*
 =============== 
-Global Styles
+Global General Styles
 ===============
 */
 html {
@@ -142,6 +142,7 @@ p {
     line-height: 1;
   }
 }
+
 /*  global classes */
 
 .btn {
@@ -192,6 +193,29 @@ main {
   display: grid;
   place-items: center;
 }
+
+/*
+=============== 
+Structural Styles
+===============
+*/
+
+#projects,
+#skills,
+#about,
+#contact {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-flow: row wrap;
+}
+.projects-container,
+.skills-container,
+.about-container,
+.contact-container {
+  width: 85%;
+}
+
 /*
 =============== 
 Scroll
@@ -341,10 +365,12 @@ header {
   color: #9c2866;
 }
 #about,
-#projects,
 #skills,
 #contact {
   height: 80vh;
+}
+#projects {
+  height: auto;
 }
 
 #skills,
