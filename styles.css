@@ -214,6 +214,11 @@ Structural Styles
 .about-container,
 .contact-container {
   width: 85%;
+  padding-top: 1rem;
+}
+
+.left-align-text {
+  text-align: left;
 }
 
 /*
@@ -420,4 +425,52 @@ footer p {
   100% {
     transform: scale(1);
   }
+}
+
+/* Projects */
+#projects .project-piece img {
+  border: 0.5px solid var(--clr-grey-8);
+}
+
+/* Skills */
+
+/* About */
+#about figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#about img {
+  border: 0.5px solid white;
+  border-radius: 50%;
+  width: 50%;
+}
+
+/* Contact */
+.follow-section {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.follow-section .social-icons {
+  display: flex;
+  justify-content: center;
+}
+
+.follow-section ul {
+  width: 100%;
+}
+
+.follow-section .social-icons li {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.follow-section .social-icons li i {
+  font-size: 1rem;
+  color: var(--clr-grey-1);
 }
