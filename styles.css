@@ -215,7 +215,7 @@ Structural Styles
 #projects,
 #skills,
 #about,
-#contact {
+#connect {
   display: flex;
   justify-content: center;
   text-align: center;
@@ -224,7 +224,7 @@ Structural Styles
 .projects-container,
 .skills-container,
 .about-container,
-.contact-container {
+.connect-container {
   width: 85%;
 }
 
@@ -384,12 +384,12 @@ header {
 #projects,
 #skills,
 #about,
-#contact {
+#connect {
   height: auto;
 }
 
 #skills,
-#contact {
+#connect {
   background: var(--clr-white);
 }
 footer {
@@ -575,12 +575,12 @@ footer p {
     margin: 0;
   }
 }
-/* Contact */
+/* connect */
 
-.contact-info {
+.connect-info {
   margin-top: 50px;
 }
-.contact-info a {
+.connect-info a {
   color: var(--clr-grey-5);
 }
 .email-section {
@@ -614,11 +614,11 @@ footer p {
   color: var(--clr-grey-5);
 }
 @media screen and (min-width: 768px) {
-  .contact-container {
+  .connect-container {
     display: flex;
     justify-content: space-around;
   }
-  .contact-info {
+  .connect-info {
     width: 33%;
   }
 }
