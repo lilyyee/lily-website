@@ -18,7 +18,7 @@ Variables
   --clr-primary-3: hsl(328, 58%, 37%);
   --clr-primary-4: hsl(328, 58%, 48%);
   /* primary/main color */
-  --clr-primary-5: #9c2866;
+  --clr-primary-5: hsl(328, 59%, 38%);
   /* lighter shades of primary color */
   --clr-primary-6: hsl(328, 58%, 70%);
   --clr-primary-7: hsl(328, 58%, 76%);
@@ -120,42 +120,8 @@ p {
   margin-bottom: 1.25rem;
   color: var(--clr-grey-5);
 }
-@media screen and (min-width: 768px) {
-  h1 {
-    font-size: 4rem;
-  }
-  h2 {
-    font-size: 2.5rem;
-  }
-  h3 {
-    font-size: 1.75rem;
-  }
-  h4 {
-    font-size: 1rem;
-  }
-  body {
-    font-size: 1rem;
-  }
-  h1,
-  h2,
-  h3,
-  h4 {
-    line-height: 1;
-  }
-}
-@media screen and (min-width: 1200px) {
-  h4 {
-    font-size: 1.25rem;
-  }
-  body {
-    font-size: 1.1rem;
-  }
-  p {
-    font-size: 1.25rem;
-  }
-}
 
-/*  global classes */
+/* Global Classes */
 
 .btn {
   text-transform: uppercase;
@@ -183,9 +149,9 @@ p {
 }
 .btn:hover {
   background: var(--clr-white);
-  color: #9c2866;
+  color: hsl(328, 59%, 38%);
 }
-/* section */
+/* Section */
 .section {
   padding-bottom: 5rem;
 }
@@ -195,11 +161,7 @@ p {
   margin: 0 auto;
   max-width: 1170px;
 }
-@media screen and (min-width: 992px) {
-  .section-center {
-    width: 95vw;
-  }
-}
+
 main {
   min-height: 100vh;
   display: grid;
@@ -255,7 +217,7 @@ nav {
   color: var(--clr-grey-1);
 }
 .fixed-nav .links a:hover {
-  color: #9c2866;
+  color: hsl(328, 59%, 38%);
 }
 /* .fixed-nav .links-container {
   height: auto !important;
@@ -274,7 +236,7 @@ nav {
   cursor: pointer;
 }
 .nav-toggle:hover {
-  color: #9c2866;
+  color: hsl(328, 59%, 38%);
 }
 .logo {
   height: 50px;
@@ -301,46 +263,7 @@ nav {
 .links a:hover {
   color: var(--clr-grey-1);
 }
-@media screen and (min-width: 768px) {
-  nav {
-    background: transparent;
-  }
-  .nav-center {
-    width: 90vw;
-    max-width: 1170px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .nav-header {
-    padding: 0;
-  }
-  .nav-toggle {
-    display: none;
-  }
-  .links-container {
-    height: auto !important;
-  }
-  .links {
-    display: flex;
-  }
-  .links a {
-    background: transparent;
-    color: var(--clr-white);
-    font-size: 1.1rem;
-    text-transform: capitalize;
-    letter-spacing: var(--spacing);
-    display: block;
-    transition: var(--transition);
-    margin: 0 1rem;
-    font-weight: bold;
-    padding: 0;
-  }
-  .links a:hover {
-    color: var(--clr-white);
-  }
-}
+
 /* hero */
 header {
   min-height: 100vh;
@@ -367,18 +290,14 @@ header {
   margin: 0 auto;
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 768px) {
-  .container p {
-    max-width: 40rem;
-  }
-}
+
 /* sections and title */
 .title h2 {
   text-align: center;
   text-transform: uppercase;
 }
 .title span {
-  color: #9c2866;
+  color: hsl(328, 59%, 38%);
 }
 
 #projects,
@@ -409,7 +328,7 @@ footer p {
   position: fixed;
   bottom: 1rem;
   right: 1rem;
-  background: #9c2866;
+  background: hsl(328, 59%, 38%);
   width: 2rem;
   height: 2rem;
   display: grid;
@@ -470,23 +389,6 @@ footer p {
   border-radius: 25px;
   padding: 8px;
 }
-@media screen and (min-width: 768px) {
-  .projects-container {
-    justify-content: space-around;
-  }
-  .project-piece {
-    width: 45%;
-    align-items: center;
-  }
-  .project-description {
-    width: 90%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .project-piece {
-    width: 30%;
-  }
-}
 
 /* Skills */
 
@@ -502,28 +404,7 @@ footer p {
   border-radius: 5px;
   padding: 10px;
 }
-@media screen and (min-width: 768px) {
-  .language-wrapper,
-  .tool-wrapper {
-    display: flex;
-    justify-content: space-evenly;
-    width: 100%;
-    flex-flow: row wrap;
-  }
-  .skill,
-  .tool {
-    width: 48%;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .skills-container {
-    margin: 25px 0;
-  }
-  .skill,
-  .tool {
-    width: 30%;
-  }
-}
+
 /* About */
 #about figure {
   display: flex;
@@ -549,33 +430,8 @@ footer p {
 .about-text {
   text-align: left;
 }
-@media screen and (min-width: 768px) {
-  .about-container {
-    display: flex;
-    justify-content: center;
-    flex-flow: row wrap;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .about-container {
-    display: flex;
-    justify-content: space-between;
-    margin: 50px 0;
-    max-width: 90%;
-  }
-  #about figure {
-    width: 35%;
-  }
-  .about-info {
-    width: 60%;
-  }
-  #about img {
-    width: 325px;
-    height: 325px;
-    margin: 0;
-  }
-}
-/* connect */
+
+/* Connect */
 
 .connect-info {
   margin-top: 50px;
@@ -613,6 +469,119 @@ footer p {
   font-size: 1.5rem;
   color: var(--clr-grey-5);
 }
+
+/*
+=============== 
+Media Queries
+===============
+*/
+/* General Styles for Tablet */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+/* Navbar Styles for Tablet */
+@media screen and (min-width: 768px) {
+  nav {
+    background: transparent;
+  }
+  .nav-center {
+    width: 90vw;
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .nav-header {
+    padding: 0;
+  }
+  .nav-toggle {
+    display: none;
+  }
+  .links-container {
+    height: auto !important;
+  }
+  .links {
+    display: flex;
+  }
+  .links a {
+    background: transparent;
+    color: var(--clr-white);
+    font-size: 1.1rem;
+    text-transform: capitalize;
+    letter-spacing: var(--spacing);
+    display: block;
+    transition: var(--transition);
+    margin: 0 1rem;
+    font-weight: bold;
+    padding: 0;
+  }
+  .links a:hover {
+    color: var(--clr-white);
+  }
+}
+/* Hero for Tablet */
+@media screen and (min-width: 768px) {
+  .container p {
+    max-width: 40rem;
+  }
+}
+/* Projects for Tablet */
+@media screen and (min-width: 768px) {
+  .projects-container {
+    justify-content: space-around;
+  }
+  .project-piece {
+    width: 45%;
+    align-items: center;
+  }
+  .project-description {
+    width: 90%;
+  }
+}
+/* Skills Styles for Tablet */
+@media screen and (min-width: 768px) {
+  .language-wrapper,
+  .tool-wrapper {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    flex-flow: row wrap;
+  }
+  .skill,
+  .tool {
+    width: 48%;
+  }
+}
+/* About Styles for Tablet */
+@media screen and (min-width: 768px) {
+  .about-container {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+}
+/* Connect Styles for Tablet */
 @media screen and (min-width: 768px) {
   .connect-container {
     display: flex;
@@ -620,5 +589,59 @@ footer p {
   }
   .connect-info {
     width: 33%;
+  }
+}
+/* Section Styles for Desktop */
+@media screen and (min-width: 992px) {
+  .section-center {
+    width: 95vw;
+  }
+}
+/* General Styles for Desktop Wide */
+@media screen and (min-width: 1200px) {
+  h4 {
+    font-size: 1.25rem;
+  }
+  body {
+    font-size: 1.1rem;
+  }
+  p {
+    font-size: 1.25rem;
+  }
+}
+/* Project Styles for Desktop Wide */
+@media screen and (min-width: 1200px) {
+  .project-piece {
+    width: 30%;
+  }
+}
+/* Skills Styles for Desktop Wide */
+@media screen and (min-width: 1200px) {
+  .skills-container {
+    margin: 25px 0;
+  }
+  .skill,
+  .tool {
+    width: 30%;
+  }
+}
+/* About Styles for Desktop Wide */
+@media screen and (min-width: 1200px) {
+  .about-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 0;
+    max-width: 90%;
+  }
+  #about figure {
+    width: 35%;
+  }
+  .about-info {
+    width: 60%;
+  }
+  #about img {
+    width: 325px;
+    height: 325px;
+    margin: 0;
   }
 }
