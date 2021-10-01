@@ -292,6 +292,9 @@ header {
 }
 
 /* sections and title */
+.title {
+  width: 100%;
+}
 .title h2 {
   text-align: center;
   text-transform: uppercase;
@@ -630,7 +633,7 @@ Media Queries
   .about-container {
     display: flex;
     justify-content: space-between;
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     max-width: 90%;
   }
   #about figure {
@@ -641,7 +644,17 @@ Media Queries
   }
   #about img {
     width: 325px;
-    height: 325px;
+    height: auto;
     margin: 0;
+  }
+}
+
+/* About Styles for Desktop - Breakpoint 1530px */
+@media screen and (min-width: 1530px) {
+  #about .title {
+    margin-bottom: 25px;
+  }
+  .about-container {
+    margin: 60px 0;
   }
 }
