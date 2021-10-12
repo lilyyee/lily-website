@@ -89,9 +89,9 @@ a {
 img:not(.logo) {
   width: 100%;
 }
-img {
+/* img {
   display: block;
-}
+} */
 
 h1,
 h2,
@@ -183,7 +183,7 @@ Structural Styles
   text-align: center;
   flex-flow: row wrap;
 }
-.projects-container,
+.project-container,
 .skills-container,
 .about-container,
 .connect-container {
@@ -361,11 +361,15 @@ footer p {
 }
 
 /* Projects */
-.projects-container {
+.project-container {
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  flex-flow: row wrap;
+  align-items: center;
+  /* flex-flow: row wrap; */
+  border: 0.5px solid var(--clr-grey-5);
+  border-radius: 2.5%;
+  margin-top: 50px;
+  background-color: var(--clr-white);
 }
 .project-piece {
   display: flex;
@@ -373,18 +377,35 @@ footer p {
   flex-direction: column;
   align-items: center;
 }
-
-.project-piece img {
+.project-box {
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+#project-img {
   border: 0.5px solid var(--clr-grey-8);
-  margin-top: 50px;
-}
-.project-piece h4 {
   margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.projects-container span {
+#project-name {
+  margin-top: 25px;
+  font-size: 1.25rem;
+}
+
+.project-container span {
   font-weight: bold;
 }
-.project-link {
+#project-skills {
+  margin-bottom: 0;
+}
+#project-tools {
+  margin-bottom: 35px;
+}
+#project-link {
   text-transform: uppercase;
   font-size: 1.125rem;
   color: white;
@@ -392,6 +413,21 @@ footer p {
   border-radius: 25px;
   padding: 8px;
 }
+
+.prev-btn,
+.next-btn {
+  color: var(--clr-primary-5);
+  font-size: 1.25rem;
+  background: transparent;
+  border-color: transparent;
+  margin: 2rem 0.5rem;
+  transition: var(--transition);
+  cursor: pointer;
+}
+/* .prev-btn:hover,
+.next-btn:hover {
+  color: var(--clr-primary-1);
+} */
 
 /* Skills */
 
@@ -551,15 +587,19 @@ Media Queries
 }
 /* Projects for Tablet */
 @media screen and (min-width: 768px) {
-  .projects-container {
-    justify-content: space-around;
+  .project-container {
+    /* justify-content: space-around; */
+    width: 75%;
   }
   .project-piece {
-    width: 45%;
+    width: 95%;
     align-items: center;
   }
-  .project-description {
-    width: 90%;
+  #project-img {
+    margin-top: 40px;
+  }
+  #project-description {
+    width: 95%;
   }
 }
 /* Skills Styles for Tablet */
@@ -614,8 +654,33 @@ Media Queries
 }
 /* Project Styles for Desktop Wide */
 @media screen and (min-width: 1200px) {
-  .project-piece {
-    width: 30%;
+  .project-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+  }
+  .project-box {
+    width: 100%;
+  }
+  #project-img {
+    width: 50%;
+    margin: 25px auto;
+  }
+  #project-name {
+    font-size: 1.2rem;
+    margin-top: 0;
+  }
+  #project-description,
+  #project-skills,
+  #project-tools {
+    font-size: 1rem;
+  }
+  #project-description {
+    margin-bottom: 10px;
+  }
+  #project-tools {
+    margin-bottom: 15px;
   }
 }
 /* Skills Styles for Desktop Wide */

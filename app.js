@@ -71,3 +71,108 @@ scrollLinks.forEach(function (link) {
     linksContainer.style.height = 0;
   });
 });
+
+// ************ project slideshow ************
+// projects data
+const projects = [
+  {
+    id: 1,
+    img: './img/sticky-note.png',
+    name: 'Super Sticky Notes',
+    link: 'https://gsti6.csb.app/',
+    description: `Greenfield project creating a sticky notes app. Multiple components used to build the classy sticky note UI with the ability to add, edit, delete, and search for notes.`,
+    skills: 'Skills: React, JSX',
+    tools: 'Tools: CodeSandbox',
+  },
+  {
+    id: 2,
+    img: './img/github-repo-gallery.jpg',
+    name: 'GitHub Repo Gallery',
+    link: 'https://lilyyee.github.io/Github-Repo-Gallery/',
+    description: `GitHub's API used to pull data from my GitHub portfolio to create a gallery of repos. Visitors to the site can click on the repos to see more details and a link to the repo.`,
+    skills: 'Skills: JavaScript',
+    tools: 'Tools: REST API, GitHub',
+  },
+  {
+    id: 3,
+    img: './img/guess-the-word-game.png',
+    name: 'Guess The Word Game',
+    link: 'https://lilyyee.github.io/Guess-The-Word/',
+    description: `Players guess the word by entering one letter at a time. If the player guesses all the letters correctly before they use up their guesses, they win!`,
+    skills: 'Skills: JavaScript',
+    tools: 'Tools: JSON',
+  },
+  {
+    id: 4,
+    img: './img/unplugged.png',
+    name: 'Unplugged',
+    link: 'https://lilyyee.github.io/Unplugged-Retreat/',
+    description: `A multi-page responsive website coded with Flexbox. This versatile design has several sections, including a cards design pattern, that can be repurposed for different sites.`,
+    skills: 'Skills: HTML, CSS, Flexbox',
+    tools: 'Tools: Photoshop, Chrome DevTools',
+  },
+  {
+    id: 5,
+    img: './img/rogue-pickings.png',
+    name: 'Rogue Pickings',
+    link: 'https://lilyyee.github.io/Rogue-Pickings-Responsive/',
+    description: `A simple home page perfect for a small business. Originally a static website, I converted it into a responsive design using Flexbox.`,
+    skills: 'Skills: HTML, CSS, Flexbox',
+    tools: 'Tools: Photoshop, Chrome DevTools',
+  },
+];
+
+// select items
+const img = document.getElementById('project-img');
+const projectName = document.getElementById('project-name');
+const link = document.getElementById('project-link');
+const description = document.getElementById('project-description');
+const skills = document.getElementById('project-skills');
+const tools = document.getElementById('project-tools');
+
+const prevBtn = document.querySelector('.prev-btn');
+const nextBtn = document.querySelector('.next-btn');
+const randomBtn = document.querySelector('.random-btn');
+
+// set starting item
+let currentItem = 0;
+
+// load initial item
+window.addEventListener('DOMContentLoaded', function () {
+  showProject(currentItem);
+});
+
+// show project based on item
+function showProject(project) {
+  const item = projects[project];
+  img.src = item.img;
+  projectName.textContent = item.name;
+  link.href = item.link;
+  description.textContent = item.description;
+  skills.textContent = item.skills;
+  tools.textContent = item.tools;
+}
+
+// show next project
+nextBtn.addEventListener('click', function () {
+  currentItem++;
+  if (currentItem > projects.length - 1) {
+    currentItem = 0;
+  }
+  showProject(currentItem);
+});
+
+// show previous project
+prevBtn.addEventListener('click', function () {
+  currentItem--;
+  if (currentItem < 0) {
+    currentItem = projects.length - 1;
+  }
+  showProject(currentItem);
+});
+
+// show random project
+randomBtn.addEventListener('click', function () {
+  currentItem = Math.floor(Math.random() * projects.length);
+  showProject(currentItem);
+});

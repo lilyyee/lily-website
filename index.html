@@ -77,121 +77,39 @@
       <div class="title">
         <h2>featured <span>projects</span></h2>
       </div>
-      <div class="projects-container">
-        <!-- project 1 -->
+      <div class="project-container">
+        <!-- project -->
         <article class="project-piece">
-          <figure>
-            <a href="https://gsti6.csb.app" target="_blank"
-              ><img src="img/sticky-note.png" alt="Sticky Note Project"
+          <div class="project-box">
+            <figure class="img-container">
+              <a href="https://gsti6.csb.app" target="_blank"
+              ><img src="./img/sticky-note.png" id="project-img" alt="Sticky Note Project"
             /></a>
-          </figure>
-          <h4>Super Sticky Notes</h4>
-          <p class="project-description left-align-text">
+            </figure>
+            <h4 id="project-name">Super Sticky Notes</h4>
+            <p id="project-description">
             React project creating a sticky notes app. Multiple components
             used to build the classy sticky note UI with the ability to add,
             edit, delete, and search for notes.
-          </p>
-          <p><span>Skills: </span>React, JSX</p>
-          <p><span>Tools: </span>CodeSandbox</p>
-          <a class="project-link" href="https://gsti6.csb.app/" target="_blank"
-            >live page</a
-          >
-        </article>
-        <!-- project 2 -->
-        <article class="project-piece">
-          <figure>
-            <a
-              href="https://lilyyee.github.io/Github-Repo-Gallery"
-              target="_blank"
-              ><img src="img/github-repo-gallery.jpg" alt="GitHub Repo Gallery"
-            /></a>
-          </figure>
-          <h4>GitHub Repo Gallery</h4>
-          <p class="project-description left-align-text">
-            GitHub's API used to pull data from my GitHub portfolio to create a
-            gallery of repos. Visitors to the site can click on the repos to see
-            more details and a link to the repo.
-          </p>
-          <p><span>Skills: </span>JavaScript</p>
-          <p><span>Tools: </span>REST API, GitHub</p>
-          <a
-            class="project-link"
-            href="https://lilyyee.github.io/Github-Repo-Gallery"
-            target="_blank"
-            >live page</a
-          >
-        </article>
-        <!-- project 3 -->
-        <article class="project-piece">
-          <figure>
-            <a href="https://lilyyee.github.io/Guess-The-Word" target="_blank"
-              ><img src="img/guess-the-word-game.png" alt="Guess the Word Game"
-            /></a>
-          </figure>
-          <h4>Guess the Word Game</h4>
-          <p class="project-description left-align-text">
-            Players guess the word by entering one letter at a time. If the
-            player guesses all the letters correctly before they use up their
-            guesses, they win!
-          </p>
-          <p><span>Skills: </span>JavaScript</p>
-          <p><span>Tools: </span>JSON</p>
-          <a
-            class="project-link"
-            href="https://lilyyee.github.io/Guess-The-Word"
-            target="_blank"
-            >live page</a
-          >
-        </article>
-        <!-- project 4 -->
-        <article class="project-piece">
-          <figure>
-            <a
-              href="https://lilyyee.github.io/Unplugged-Retreat"
-              target="_blank"
-              ><img src="img/unplugged.png" alt="Unplugged Site"
-            /></a>
-          </figure>
-          <h4>Unplugged</h4>
-          <p class="project-description left-align-text">
-            A multi-page responsive website coded with Flexbox. This versatile
-            design has several sections, including a cards design pattern, that
-            can be repurposed for different sites.
-          </p>
-          <p><span>Skills: </span>HTML, CSS, Flexbox</p>
-          <p><span>Tools: </span>Photoshop, Chrome DevTools</p>
-          <a
-            class="project-link"
-            href="https://lilyyee.github.io/Unplugged-Retreat"
-            target="_blank"
-            >live page</a
-          >
-        </article>
-        <!-- project 5 -->
-        <article class="project-piece">
-          <figure>
-            <a
-              href="https://lilyyee.github.io/Rogue-Pickings-Responsive"
-              target="_blank"
-              ><img src="img/rogue-pickings.png" alt="Rogue Pickings site"
-            /></a>
-          </figure>
-          <h4>Rogue Pickings</h4>
-          <p class="project-description left-align-text">
-            A simple home page perfect for a small business. Originally a static
-            website, I converted it into a responsive design using Flexbox.
-          </p>
-          <p><span>Skills: </span>HTML, CSS, Flexbox</p>
-          <p><span>Tools: </span>Photoshop, Chrome DevTools</p>
-          <a
-            class="project-link"
-            href="https://lilyyee.github.io/Rogue-Pickings-Responsive"
-            target="_blank"
-            >live page</a
-          >
-        </article>
+            </p>
+            <p id="project-skills"><span>Skills: </span>React, JSX</p>
+            <p id="project-tools"><span>Tools: </span>CodeSandbox</p>
+            <a id="project-link" href="https://gsti6.csb.app/" target="_blank"
+            >live page</a>
+          </div> 
+          <!-- previous and next buttons -->
+          <div class="button-container">
+            <button class="prev-btn">
+              <i class="fas fa-chevron-left"></i>
+            </button>
+            <button class="next-btn">
+              <i class="fas fa-chevron-right"></i>
+            </button>
+          </div>
+        </article>   
       </div>
     </section>
+    
 
     <!-- skills -->
     <section id="skills" class="section">
