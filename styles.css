@@ -370,6 +370,7 @@ footer p {
   border-radius: 2.5%;
   margin-top: 50px;
   background-color: var(--clr-white);
+  width: 70%;
 }
 .project-piece {
   display: flex;
@@ -403,7 +404,7 @@ footer p {
   margin-bottom: 0;
 }
 #project-tools {
-  margin-bottom: 35px;
+  margin-bottom: 20px;
 }
 #project-link {
   text-transform: uppercase;
@@ -412,6 +413,7 @@ footer p {
   background-color: var(--clr-grey-5);
   border-radius: 25px;
   padding: 8px;
+  margin-bottom: 15px;
 }
 
 .prev-btn,
@@ -596,10 +598,16 @@ Media Queries
     align-items: center;
   }
   #project-img {
-    margin-top: 40px;
+    width: 75%;
+    margin: 25px auto 0 auto;
   }
   #project-description {
     width: 95%;
+  }
+  .prev-btn,
+  .next-btn {
+    margin: 0 2rem;
+    font-size: 2.5rem;
   }
 }
 /* Skills Styles for Tablet */
@@ -658,7 +666,7 @@ Media Queries
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;
+    width: 60%;
   }
   .project-box {
     width: 100%;
@@ -668,19 +676,8 @@ Media Queries
     margin: 25px auto;
   }
   #project-name {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     margin-top: 0;
-  }
-  #project-description,
-  #project-skills,
-  #project-tools {
-    font-size: 1rem;
-  }
-  #project-description {
-    margin-bottom: 10px;
-  }
-  #project-tools {
-    margin-bottom: 15px;
   }
 }
 /* Skills Styles for Desktop Wide */

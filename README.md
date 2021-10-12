@@ -1,5 +1,9 @@
 # lily-website
 
-This is my most current updated portfolio website that features some of my projects.
+Responsive portfolio website that features some of my projects.
+
+Skills: HTML, CSS, JavaScript, Flexbox
+
+Tools: Chrome Dev Tools
 
 https://lilyyee.github.io/lily-website
