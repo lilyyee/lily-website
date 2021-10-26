@@ -80,7 +80,7 @@ const projects = [
     img: './img/sticky-note.png',
     name: 'Super Sticky Notes',
     link: 'https://gsti6.csb.app/',
-    description: `Greenfield project creating a sticky notes app. Multiple components used to build the classy sticky note UI with the ability to add, edit, delete, and search for notes.`,
+    description: `React project creating a sticky notes app. Multiple components used to build the classy sticky note UI with the ability to add, edit, delete, and search for notes.`,
     skills: 'Skills: React, JSX',
     tools: 'Tools: CodeSandbox',
   },
