@@ -464,6 +464,7 @@ footer p {
 }
 .about-info h3 {
   margin: 0 0 25px 0;
+  text-transform: none;
 }
 .about-info h4 {
   margin: 0 0 25px 0;
@@ -482,7 +483,10 @@ footer p {
 }
 .email-section {
   margin-top: 25px;
+  font-size: 2.5rem;
+  color: var(--clr-grey-5);
 }
+
 .follow-section {
   display: flex;
   flex-flow: row wrap;
@@ -718,5 +722,12 @@ Media Queries
   }
   .about-container {
     margin: 60px 0;
+  }
+}
+
+/* Connect Styles for Desktop Wide */
+@media screen and (min-width: 1200px) {
+  .email-section p i {
+    font-size: 2.5rem;
   }
 }
