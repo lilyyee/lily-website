@@ -1,6 +1,6 @@
 # lily-website
 
-Responsive portfolio website that features some of my projects.
+Responsive portfolio website that features some of my web development projects.
 
 Skills: HTML, CSS, JavaScript, Flexbox
 
